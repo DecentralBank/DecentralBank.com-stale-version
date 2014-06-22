@@ -1,4 +1,4 @@
 DecentralBank.com
 =================
 
-Decentral Project Website
+DecentralBank Project Website
