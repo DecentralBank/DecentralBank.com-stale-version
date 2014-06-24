@@ -12,7 +12,8 @@ Decentral Wallet
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/cover.css" rel="stylesheet">
-
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="icon" href="assets/icon128.ico" type="image/x-icon" />
 <!-- Documentation extras -->
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -32,10 +33,11 @@ Decentral Wallet
              <li><a class="scrollto" href="#feature">Features</a></li>
              <li><a class="scrollto" href="#blog">Blog</a></li>
           </ul>
+
         </div><!--/.nav-collapse -->
       </div><!--/.container -->
     </div>
-<header class="background_showcase">
+<header id="top" class="background_showcase">
 
       <div class="container">        
 <div id="ven" class="row">
@@ -51,7 +53,7 @@ Decentral Wallet
             <a href="https://twitter.com/share" class="twitter-share-button centered" style="color:#aaa" data-lang="en">Tweet</a>
             <div id="buttons" >
               <a href="#feature" class="scrollto btn btn-white">Learn More</a>
-              <a href="#feature" class="scrollto btn btn-white">Github</a>
+              <a href="https://github.com/DecentralBank/Decentral" class="scrollto btn btn-white">Github</a>
             </div>
             <h4>Will be available in:
             </h4>
@@ -73,7 +75,8 @@ Decentral Wallet
       <a href="http://www.internetdefenseleague.org"><div class="asset image_internetdefenseleague"></div></a>
     </div>
 </div><!--carousel-->
-  <div class="container centered">
+<div id="explanation1" class="row">
+  <div  class="container centered">
   <div class="row">
       <h1 class="title">Build on Top of Bitcoin</h1><h2> Coins,Tokens,Property.</h2>
     <p class="lead">
@@ -82,36 +85,38 @@ Decentral Wallet
       easier and more powerful for everyone.
    </div>
  </div>
+</div>
 <div id="explanation" class="row">
 
-  <div class="section-header">
+  <div id="feature" class="section-header">
           <h1 class="title">What's the problem?</h1>
           <h4>Bitcoin does not replace banks, our current financial system still needs them.</br><br> Bitcoin still lacks an investment and reputation infrastructure.</br> <br> Bitcoin users still have to rely on a third party to handle their deposits honestly.</h4>
         </div>
         <div class="divider2"></div>
-        <div class="col-lg-4">
-          <div class="asset image-builder-build"></div>
+        <div  id="icon" class="col-lg-4">
+          <div ><i class="fa fa-btc"></i></div>
           <h3>Tokenization</h3>
           <p>
             Decentral aims to replace some of the main functions of banks such as the ability to issue, buy and sell shares/tokens of any entity whose tokens are issued through Bitcoin2.0 technologies such as colored coins.
           </p>
         </div>
-        <div class="col-lg-4">
-          <div class="asset image-builder-code"></div>
+        <div id="icon" class="col-lg-4">
+          <div ><i class="fa fa-key"></i></div>
+           
           <h3>Multisignature</h3>
           <p>
              Secure Wallet. Easy-to-use multisignature bitcoin wallet. With Decentral Wallet you can choose to have more than one person or device sign a transaction. Should your private keys be compromised your Bitcoins are still safe.
           </p>
         </div>
-        <div class="col-lg-4">
-          <div class="asset image-builder-deploy"></div>
+        <div id="icon" class="col-lg-4">
+          <div><i class="fa fa-university "></i></div>
           <h3>Voting pools</h3>
           <p>
-            Bitcoin users have to rely on a third party to handle their funds has been a victim of heists, thefts, hacks, scams, and losses 
+            Bitcoin users that have to rely on a third party to handle their funds has been a victim of heists, thefts, hacks, scams, and losses. We will build on top of Open Transactions technology to solve this problem.
           </p>
         </div>
       </div>
-      <div id="explanation" class="row">
+      <div id="features" class="row">
 
   <div class="section-header">
           <h3 class="title">Features </h3>
@@ -133,8 +138,25 @@ Decentral Wallet
       </div>
     </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+//smooth scrolling
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 <script>  
     window._idl = {};
     _idl.variant = "modal";{campaign}
