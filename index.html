@@ -14,18 +14,10 @@ Decentral Wallet
 <link href="css/cover.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="icon" href="assets/icon128.ico" type="image/x-icon" />
-<!-- Documentation extras -->
-<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+</head>
 
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-  <style type="text/css"></style><style type="text/css"></style></head>
-  <body>
-    <div  class="navbar navbar-fixed-top" role="navigation">
+  <body >
+    <div id="navigationBar" class="navbar navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-collapse collapse">
           <ul id="navigation" class="nav navbar-nav navbar-right">
@@ -37,8 +29,9 @@ Decentral Wallet
         </div><!--/.nav-collapse -->
       </div><!--/.container -->
     </div>
-<header id="top" class="background_showcase">
-
+    
+<div  id="background_showcase">
+  <div id="top" class="bg-overlay">
       <div class="container">        
 <div id="ven" class="row">
     <div class="col-lg-4"></div>
@@ -66,8 +59,8 @@ Decentral Wallet
 </div>
 
       </div><!--container-->
-
-    </header>
+</div>
+</div>
     <div >
     <div class="row" id="project_logos">
        <a href="https://bitcoin.org/en/"><div class="asset image_bitcoin"></div></a>
@@ -86,9 +79,8 @@ Decentral Wallet
    </div>
  </div>
 </div>
-<div id="explanation" class="row">
-
-  <div id="feature" class="section-header">
+      <div id="explanation" class="row">
+        <div id="feature" class="section-header">
           <h1 class="title">What's the problem?</h1>
           <h4>Bitcoin does not replace banks, our current financial system still needs them.</br><br> Bitcoin still lacks an investment and reputation infrastructure</br> <br> Bitcoin users still have to rely on a third party to handle their deposits honestly</h4>
         </div>
@@ -140,6 +132,7 @@ Decentral Wallet
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 <script>
 //smooth scrolling
 $(function() {
@@ -156,6 +149,8 @@ $(function() {
     }
   });
 });
+
+
 </script>
 <script>  
     window._idl = {};
