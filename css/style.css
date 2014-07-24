@@ -1,7 +1,6 @@
 * { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; *behavior:url(boxsizing.htc); }
 html, body { 
-	margin:0;
-	padding:0;background:#000;
+	margin:fff;
 	line-height:1;
 	font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -10,7 +9,7 @@ h1, h2, .nav-link, .playlist-btn {
 	text-transform:uppercase;
 }
 h1 {font-size:48px; }
-h1, h2, h3, p { margin:0 0 10px; color:#fff; text-shadow: 1px 1px 1px #000;}
+h1, h2, h3, p { margin:0 0 10px; color:#545454; }
 p { line-height:1.4;  }
 a { color:#fff; font-style:italic; }
 blockquote { 
@@ -166,9 +165,6 @@ Inherited from body
 body {
 height: 100%;
 text-align: center;
-<<<<<<< HEAD
-}
-=======
 }
 
 .form-inline{
@@ -179,4 +175,3 @@ margin-bottom: 15px;
 
 
 
->>>>>>> ac2741a... added video header

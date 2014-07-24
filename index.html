@@ -14,26 +14,84 @@ Decentral Wallet
 <link href="css/cover.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="icon" href="assets/icon128.ico" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bigvideo.css">
 </head>
 
-  <body >
+  <body>
+
+
+
     <div id="navigationBar" class="navbar navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-collapse collapse">
-          <ul id="navigation" class="nav navbar-nav navbar-right">
-            <li class="active"><a class="scrollto" href="#top">Home</a></li>
+          <ul class="nav navbar-nav navbar-right">
+
+             <li><a class="scrollto" href="#top">Home</a></li>
              <li><a class="scrollto" href="#feature">Features</a></li>
              <li><a class="scrollto" href="http://www.decentralbank.com/blog">Blog</a></li>
+     
           </ul>
 
         </div><!--/.nav-collapse -->
       </div><!--/.container -->
     </div>
+
     
 <div  id="background_showcase">
+
+  
+ <div class="container-fluid">    
+      
+<div class="row">
+     <div class="video-wrapper">
+
+ <div class="container">    
+      
+<div  id="ven" class="row">
+
+  <div class="col-lg-4"></div>
+  <div class="col-lg-6">
+     <div class="row">
+        <a href="index.html"><img src="assets/icon128.png" alt="Decentral" class="col-lg-4 col-lg-push-2"></a>
+      </div>
+ <div class="pitch">
+          <div class="col-lg-12 col-lg-pull-2" >
+            <h1 class="title">Decentral Bank</h1>
+            <h4 id="text">An Open Source Decentralized Bitcoin Banking system in your wallet</h4>
+            
+            <a href="https://twitter.com/share" class="twitter-share-button centered twitter-bird step" style="color:#aaa" data-lang="en"></a>
+            <div id="buttons" >
+              <a href="http://www.decentralbank.com/blog" class="scrollto btn btn-white"><i id="button_icon" class="fa fa-cog"></i><p id="button_text">Blog</p></a>
+              <a href="https://github.com/DecentralBank/Decentral" class="scrollto btn btn-white"><i id="button_icon" class="fa fa-github"></i><p id="button_text">Github</p></a>
+            </div>
+            <h4>Will be available in:
+            </h4>
+            <span class="browserlogo fontelico-chrome"></span>
+            <span class="browserlogo fontelico-firefox"></span>
+          </div>
+        </div>
+
+
+  </div>
+
+     </div>   
+  </div>
+
+     </div>
+</div>
+</div>
+
+
+<!--
+
   <div id="top" class="bg-overlay">
-      <div class="container">        
+  
+      <div class="container">    
+      
 <div id="ven" class="row">
+
     <div class="col-lg-4"></div>
   <div class="col-lg-6">
      <div class="row">
@@ -58,8 +116,12 @@ Decentral Wallet
   <div class="col-lg-3"></div>
 </div>
 
-      </div><!--container-->
+      </div>
 </div>
+
+-->
+
+
 </div>
     <div >
     <div class="row" id="project_logos">
@@ -119,7 +181,10 @@ Decentral Wallet
         </div>
       </div>
 
-          <div id="subscribeForm" class="container">
+
+
+
+ <div id="subscribeForm" class="container">
               <div id="subscribeOverlay" class="row">
                       <h3 class="title">Email updates</h3>
                       <h4>Sign up now to our newsletter and you'll be one of the first to know about new updates:</h4>
@@ -145,7 +210,19 @@ Decentral Wallet
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js"></script>   
+<script src="js/video.js"></script>
+<script src="js/bigvideo.js"></script>
+
+ <script>
+      $(function() {
+            var BV = new $.BigVideo({useFlashForFirefox:false,container: $('.video-wrapper').css('height','50%')});
+      BV.init();
+
+      BV.show('assets/walk.mp4',{doLoop:true,ambient:true});
+      });
+    </script>
+
 <script>
 //smooth scrolling
 $(function() {
@@ -176,3 +253,5 @@ $(function() {
         document.getElementsByTagName('body')[0].appendChild(idl);
     })();
 </script>
+
+<!-- ...some more content (hopefully)... -->
