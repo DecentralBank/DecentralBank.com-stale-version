@@ -25,6 +25,34 @@
 
 
 
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Decentral Bank</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+     
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
     <div  id="background_showcase">
 
 
@@ -48,7 +76,9 @@
 
 
                 <div id="buttons" >
-                 <a href="#explanation1" class="btn whitee">Learn More</a>
+                 <a href="https://github.com/DecentralBank/whitepaper" class="btn whitee">White Paper</a>&#160;&#160;
+                  <a href="www.decentralbank.com/blog" class="btn whitee">Blog</a>
+
                </div>
 
              </div>
@@ -345,6 +375,32 @@ _idl.variant = "modal";{campaign}
   idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'modal');
   document.getElementsByTagName('body')[0].appendChild(idl);
 })();
+</script>
+
+<script>
+
+
+(function ($) {
+  $(document).ready(function(){
+
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 800) {
+                $('.navbar').fadeIn();
+            } else {
+                $('.navbar').fadeOut();
+            }
+        });
+    });
+
+});
+  }(jQuery));
 </script>
 
 <!-- ...some more content (hopefully)... -->
