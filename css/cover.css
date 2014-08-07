@@ -357,8 +357,13 @@ background: rgba(255,255,255,.25);
 
 
 a.btn.whitee {
+
 color: #fff;
-border: 1px solid #fff;
+width: 10em;
+font-size: 1.2em;
+padding:10px;
+border: 2px solid #fff;
+
 }
 
 a.btn.whitee:hover{opacity:0.85; };     
